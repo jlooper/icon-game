@@ -9,7 +9,10 @@
 
 
 /* The initial pile of unsorted cards */
-
+body {
+  font-size:12px;
+  font-family:Arial,helvetica,sans-serif;
+}
 
 #cardPile {
   height: 0px;
@@ -24,17 +27,11 @@
 #cardSlots div, #cardPile div {
     width: 50px;
     height: 50px;
-    padding: 10px;
     border: 1px solid #333;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
     margin-bottom: 10px;
     background: #fff;
-    font-size:12px;
-    font-family:Arial,helvetica,sans-serif;
+    padding:3px;
 }
-
 
 
 #cardSlots div.hovered {
@@ -55,7 +52,7 @@ $(init);
 
 function init() {
 
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i <= 10; i++) {
     
     $('#element_'+i).data( 'number', i ).attr( 'id', 'card'+i ).draggable( {
       containment: '#content',
@@ -67,25 +64,27 @@ function init() {
 
   // Create the element slots, hard-coded for easy creation
 
-    $('#slot_1').data( 'number', 2 ).droppable( {
+    
+    
+    $('#slot_2').data( 'number', 1 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_2').data( 'number', 9 ).droppable( {
+    $('#slot_9').data( 'number', 2 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_3').data( 'number', 7 ).droppable( {
+    $('#slot_7').data( 'number', 3 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_4').data( 'number', 10 ).droppable( {
+    $('#slot_10').data( 'number', 4 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
@@ -97,31 +96,31 @@ function init() {
       drop: handleCardDrop
     } );
     
-    $('#slot_6').data( 'number', 4 ).droppable( {
+    $('#slot_4').data( 'number', 6 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_7').data( 'number', 6 ).droppable( {
+    $('#slot_6').data( 'number', 7 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_8').data( 'number', 1 ).droppable( {
+    $('#slot_1').data( 'number', 8 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_9').data( 'number', 8 ).droppable( {
+    $('#slot_8').data( 'number', 9 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
-    
-    $('#slot_10').data( 'number', 3 ).droppable( {
+
+    $('#slot_3').data( 'number', 10 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
