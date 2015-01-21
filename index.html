@@ -67,25 +67,25 @@ function init() {
 
   // Create the element slots, hard-coded for easy creation
 
-    $('#slot_1').data( 'number', 1 ).droppable( {
+    $('#slot_1').data( 'number', 2 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_2').data( 'number', 2 ).droppable( {
+    $('#slot_2').data( 'number', 9 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_3').data( 'number', 3 ).droppable( {
+    $('#slot_3').data( 'number', 7 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_4').data( 'number', 4 ).droppable( {
+    $('#slot_4').data( 'number', 10 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
@@ -97,31 +97,31 @@ function init() {
       drop: handleCardDrop
     } );
     
-    $('#slot_6').data( 'number', 6 ).droppable( {
+    $('#slot_6').data( 'number', 4 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_7').data( 'number', 7 ).droppable( {
+    $('#slot_7').data( 'number', 6 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_8').data( 'number', 8 ).droppable( {
+    $('#slot_8').data( 'number', 1 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_9').data( 'number', 9 ).droppable( {
+    $('#slot_9').data( 'number', 8 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );
     
-    $('#slot_10').data( 'number', 10 ).droppable( {
+    $('#slot_10').data( 'number', 3 ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
@@ -149,27 +149,27 @@ function handleCardDrop( event, ui ) {
   <div id="content">
   <p>Can you match the icon to the app name? Drag the icons from the left to the box on the right. If it's not obvious, maybe there's a problem!</p>
   <div id="cardPile"> 
-    <div id="element_1">uno</div>
-    <div id="element_2">dos</div>
-    <div id="element_3">tres</div>
-    <div id="element_4">quatro</div>
-    <div id="element_5">cinco</div>
-    <div id="element_6">seis</div>
-    <div id="element_7">siete</div>
-    <div id="element_8">ocho</div>
-    <div id="element_9">nueve</div>
-    <div id="element_10">dies</div>
+    <div id="element_1"><img src="img/cocoppa.png"></div>
+    <div id="element_2"><img src="img/bemyeyes.png"></div>
+    <div id="element_3"><img src="img/colorzen.png"></div>
+    <div id="element_4"><img src="img/dunkin.png"></div>
+    <div id="element_5"><img src="img/eraser.png"></div>
+    <div id="element_6"><img src="img/fontcandy.png"></div>
+    <div id="element_7"><img src="img/pictual.png"></div>
+    <div id="element_8"><img src="img/sephora.png"></div>
+    <div id="element_9"><img src="img/spacepuzzle.png"></div>
+    <div id="element_10"><img src="img/stickerplay.png"></div>
   </div>
   <div id="cardSlots"> 
-    <div id="slot_1">Be My Eyes</div>
-    <div id="slot_2">Gorillacam</div>
-    <div id="slot_3">Pictual</div>
+    <div id="slot_1">Sephora</div>
+    <div id="slot_2">Cocoppa</div>
+    <div id="slot_3">Sticker Play</div>
     <div id="slot_4">Font Candy</div>
     <div id="slot_5">Eraser</div>
-    <div id="slot_6">Sticker Play</div>
+    <div id="slot_6">Pictual</div>
     <div id="slot_7">Color Zen</div>
     <div id="slot_8">Space Puzzle</div>
-    <div id="slot_9">Sephora</div>
+    <div id="slot_9">Be My Eyes</div>
     <div id="slot_10">Dunkin'</div>
   </div>
 </div>
